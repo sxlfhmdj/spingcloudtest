@@ -77,14 +77,10 @@ public class Application {
 ```
 
 ```
-server.port=1111
+server.port=8080
+spring.application.name=eureka_publisher
 eureka.instance.hostname=localhost
-#由于应用是注册中心，所以设置为false，代表不向注册中心注册自己
-eureka.client.register-with-eureka=false
-#由于注册中心的职责就是维护服务实例，它并不需要去检索服务，所以也设置为false
-eureka.client.fetch-registry=false
-eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka/
-
+eureka.client.service-url.defaultZone=http://localhost:1111/eureka/
 ```
 
 ```
