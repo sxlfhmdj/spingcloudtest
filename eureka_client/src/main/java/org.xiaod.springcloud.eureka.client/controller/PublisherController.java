@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Description: 【Controller Test】 <br/>
+ * Description: 【服务提供】 <br/>
  * Created on 15:27 2017/7/14 <br/>
  */
 @RestController
-public class HelloController {
+public class PublisherController {
 
     @Autowired
     private DiscoveryClient client;
